@@ -14,6 +14,7 @@ parameters = cv2.aruco.DetectorParameters()
 @app.route('/detect', methods=['POST'])
 def detect_aruco():
     data = request.json
+    print(data)
 
     if 'image' not in data:
         return jsonify({"error": "No image provided"}), 400
@@ -33,5 +34,5 @@ def detect_aruco():
     else:
         return jsonify({"markers": []})
 
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5001)
+# if __name__ == '__main__':
+#     app.run(host='0.0.0.0', port=5001)
