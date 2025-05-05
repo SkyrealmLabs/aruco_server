@@ -1,0 +1,14 @@
+{
+  "name": "aruco-server",
+  "version": "1.0.0",
+  "description": "This is node.js server that request detection of aruco marker from python code",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Arman Syazwan",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
